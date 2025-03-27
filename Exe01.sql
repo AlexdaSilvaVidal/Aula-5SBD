@@ -1,7 +1,7 @@
 SELECT a.aluno_id, a.nome, a.email 
 FROM aluno a
-JOIN matricula m ON a.aluno_id = m.aluno_id  //Relaciona os alunos à matrículas
-JOIN curso c ON m.curso_id = c.curso_id        //Relaciona matrículas ao curso
+JOIN matricula m ON a.aluno_id = m.aluno_id  
+JOIN curso c ON m.curso_id = c.curso_id       
 WHERE c.titulo = 'Banco de Dados';
 
 SELECT curso_id, titulo, carga_horaria 
